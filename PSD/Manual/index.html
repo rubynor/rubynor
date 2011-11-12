@@ -1,0 +1,696 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Lotus HTML Version Documentation Template</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Lotus HTML Version&rdquo; Documentation by &ldquo;Peerapong Pulpipatnan&rdquo;</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Lotus HTML Version&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 01/09/2011<br>
+					By: Peerapong Pulpipatnan
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/peerapong">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">HTML Structure</a></li>
+			<li><a href="#cssFiles">CSS Files and Structure</a></li>
+			<li><a href="#javascript">JavaScript</a></li>
+			<li><a href="#psdFiles">PSD Files</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) HTML Structure (web version)</strong> - <a href="#toc">top</a></h3>
+		<p>This template have a liquid layout width at 100%. All the elements in the code are named with appropriate IDs and Classes, so you can easily find what you need to edit in the HTML and the CSS.</p>
+		
+		<hr>
+		
+		<strong>How to change header background color?</strong><br/>
+		
+		You can change header background color by changing color code of #header_wrapper in /css/screen.css. For example:
+		
+<pre>
+body #header_wrapper
+{
+	background: #000000 url('../images/header_bg.png') no-repeat top center;
+	padding: 20px 0 0 0;
+	height: 236px;
+}
+body.home #header_wrapper
+{
+	background: #000000 url('../images/header_bg.png') no-repeat top center;
+	padding: 20px 0 0 0;
+	height: 550px;
+}
+</pre>
+
+		<br/>
+		
+		<strong>How to change background pattern?</strong><br/>
+		
+		You can change header background pattern by changing class name of #header_pattern in /css/screen.css. Open /css/screen.css find "Predefined background pattern" to see all possible pattern options.
+
+		<br/><br/><br/>
+		
+		<strong>Menu and Submenu</strong><br/>
+		
+		<p>Menu contain inside ul ID "main_menu" and class name "nav" below is example of code</p>
+
+<pre>
+&lt;ul id=&quot;main_menu&quot; class=&quot;nav&quot;&gt;
+    &lt;li class=&quot;current-menu-item&quot;&gt;&lt;a href=&quot;index.html&quot;&gt;Home&lt;/a&gt; 
+    	&lt;ul class=&quot;sub-menu&quot;&gt; 
+    		&lt;li&gt;&lt;a href=&quot;index.html&quot;&gt;Homepage Style 1&lt;/a&gt;&lt;/li&gt; 
+    		&lt;li&gt;&lt;a href=&quot;index2.html&quot;&gt;Homepage Style 2&lt;/a&gt;&lt;/li&gt; 
+    		&lt;li&gt;&lt;a href=&quot;index3.html&quot;&gt;Homepage Style 3&lt;/a&gt;&lt;/li&gt; 
+    		&lt;li&gt;&lt;a href=&quot;index4.html&quot;&gt;Homepage Style 4&lt;/a&gt;&lt;/li&gt; 
+    		&lt;li&gt;&lt;a href=&quot;index5.html&quot;&gt;Homepage Style 5&lt;/a&gt;&lt;/li&gt; 
+    	&lt;/ul&gt; 
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://themeforest.net/item/lotus-for-business-software-corporate-portfolio/full_screen_preview/164748&quot;&gt;Wordpress version&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Portfolios&lt;/a&gt; 
+    	&lt;ul class=&quot;sub-menu&quot;&gt; 
+    		&lt;li&gt;&lt;a href=&quot;portfolios_3columns.html&quot;&gt;3 Columns&lt;/a&gt;&lt;/li&gt; 
+    		&lt;li&gt;&lt;a href=&quot;portfolios_4columns.html&quot;&gt;4 Columns&lt;/a&gt;&lt;/li&gt; 
+    		&lt;li&gt;&lt;a href=&quot;portfolios_thumbnail.html&quot;&gt;Thumbnail Only&lt;/a&gt;&lt;/li&gt; 
+    		&lt;li&gt;&lt;a href=&quot;portfolios_thumbnail_detail.html&quot;&gt;Thumbnail with detail&lt;/a&gt;&lt;/li&gt; 
+    		&lt;li&gt;&lt;a href=&quot;portfolios_image_gallery.html&quot;&gt;Image Gallery&lt;/a&gt;&lt;/li&gt; 
+    	&lt;/ul&gt; 
+    &lt;/li&gt; 
+    &lt;li&gt;&lt;a href=&quot;blog.html&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt; 
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Pages&lt;/a&gt; 
+    	&lt;ul class=&quot;sub-menu&quot;&gt; 
+    		&lt;li&gt;&lt;a href=&quot;about_us.html&quot;&gt;About Us&lt;/a&gt;&lt;/li&gt; 
+    		&lt;li&gt;&lt;a href=&quot;our_services.html&quot;&gt;Our Services&lt;/a&gt;&lt;/li&gt; 
+    		&lt;li&gt;&lt;a href=&quot;pricing_3columns.html&quot;&gt;Pricing 3 Columns&lt;/a&gt;&lt;/li&gt; 
+    		&lt;li&gt;&lt;a href=&quot;pricing_4columns.html&quot;&gt;Pricing 4 Columns&lt;/a&gt;&lt;/li&gt; 
+    	&lt;/ul&gt; 
+    &lt;/li&gt;  
+    &lt;li&gt;&lt;a href=&quot;contact.html&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt; 
+&lt;/ul&gt;
+</pre>
+
+	<p>Above code will create one menu name "Home" which is an active menu since it has class name "current_page_item" and have 5 submenu items. You can add submenu by ul child inside menu li</p><br/>
+	
+	
+	<strong>Homepage Slider</strong><br/>
+	
+	<p>If you want to add an item to coin slider. Add new "li" into a child of div with ID of "slider". Example code below:</p>
+	
+<pre>
+&lt;div id=&quot;anything_slider&quot;&gt; 
+    &lt;div class=&quot;wrapper&quot;&gt; 
+    	&lt;ul&gt; 
+    		&lt;li id=&quot;anythingslide1&quot;&gt; 
+    			&lt;a href=&quot;#&quot;&gt; 
+    				&lt;img src=&quot;example/slide1.png&quot; alt=&quot;&quot;/&gt; 
+    			&lt;/a&gt; 
+    		&lt;/li&gt; 
+    		&lt;li id=&quot;anythingslide2&quot;&gt; 
+    			&lt;a href=&quot;#&quot;&gt; 
+    				&lt;img src=&quot;example/slide2.png&quot; alt=&quot;&quot;/&gt; 
+    			&lt;/a&gt; 
+    		&lt;/li&gt; 
+    		&lt;li id=&quot;anythingslide3&quot;&gt; 
+    			&lt;a href=&quot;#&quot;&gt; 
+    				&lt;img src=&quot;example/slide3.png&quot; alt=&quot;&quot;/&gt; 
+    			&lt;/a&gt; 
+    		&lt;/li&gt; 
+    		&lt;li id=&quot;anythingslide4&quot;&gt; 
+    			&lt;a href=&quot;#&quot;&gt; 
+    				&lt;img src=&quot;example/slide4.png&quot; alt=&quot;&quot;/&gt; 
+    			&lt;/a&gt; 
+    		&lt;/li&gt; 
+    	&lt;/ul&gt; 
+    &lt;/div&gt; 
+&lt;/div&gt;
+</pre>
+
+<br/>
+	
+	<strong>Styles Column</strong><br/>
+	
+	<p>
+		This template has many option for display your content in columns
+	</p>
+	
+	<strong>2 columns contents</strong>
+	
+<pre>
+&lt;div class=&quot;one_half&quot;&gt;
+	...
+&lt;/div&gt;
+&lt;div class=&quot;one_half last&quot;&gt;
+	...
+&lt;/div&gt;
+</pre>
+
+	<strong>3 columns contents</strong>
+	
+<pre>
+&lt;div class=&quot;one_third&quot;&gt;
+	...
+&lt;/div&gt;
+&lt;div class=&quot;one_third&quot;&gt;
+	...
+&lt;/div&gt;
+&lt;div class=&quot;one_half last&quot;&gt;
+	...
+&lt;/div&gt;
+</pre>
+
+	<strong>2/3 columns contents</strong>
+	
+<pre>
+&lt;div class=&quot;two_third&quot;&gt;
+	...
+&lt;/div&gt;
+&lt;div class=&quot;one_half last&quot;&gt;
+	...
+&lt;/div&gt;
+</pre>
+
+	<strong>4 columns contents</strong>
+	
+<pre>
+&lt;div class=&quot;one_fourth&quot;&gt;
+	...
+&lt;/div&gt;
+&lt;div class=&quot;one_fourth&quot;&gt;
+	...
+&lt;/div&gt;
+&lt;div class=&quot;one_fourth&quot;&gt;
+	...
+&lt;/div&gt;
+&lt;div class=&quot;one_fourth last&quot;&gt;
+	...
+&lt;/div&gt;
+</pre>
+
+	<strong>5 columns contents</strong>
+	
+<pre>
+&lt;div class=&quot;one_fifth&quot;&gt;
+	...
+&lt;/div&gt;
+&lt;div class=&quot;one_fifth&quot;&gt;
+	...
+&lt;/div&gt;
+&lt;div class=&quot;one_fifth&quot;&gt;
+	...
+&lt;/div&gt;
+&lt;div class=&quot;one_fifth&quot;&gt;
+	...
+&lt;/div&gt;
+&lt;div class=&quot;one_fourth last&quot;&gt;
+	...
+&lt;/div&gt;
+</pre>
+
+	<strong>6 columns contents</strong>
+	
+<pre>
+&lt;div class=&quot;one_sixth&quot;&gt;
+	...
+&lt;/div&gt;
+&lt;div class=&quot;one_sixth&quot;&gt;
+	...
+&lt;/div&gt;
+&lt;div class=&quot;one_sixth&quot;&gt;
+	...
+&lt;/div&gt;
+&lt;div class=&quot;one_sixth&quot;&gt;
+	...
+&lt;/div&gt;
+&lt;div class=&quot;one_sixth last&quot;&gt;
+	...
+&lt;/div&gt;
+</pre>
+	
+	<br/>
+
+	<strong>Page header</strong>
+	
+	<p>
+		Below is example code of adding page title and description.
+	</p>
+
+<pre>
+&lt;div class=&quot;page_caption&quot;&gt; 
+    &lt;div class=&quot;caption_inner&quot;&gt; 
+    	&lt;div class=&quot;caption_header&quot;&gt; 
+    		&lt;h1 class=&quot;cufon&quot;&gt;OUR LATEST UPDATES&lt;/h1&gt; 
+    	&lt;/div&gt; 
+    	&lt;div style=&quot;float:right;margin:20px 20px 0 0&quot;&gt; 
+    		&lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Buy Now&lt;/a&gt; 
+    	&lt;/div&gt; 
+    &lt;/div&gt; 
+&lt;/div&gt;
+</pre>
+
+	<br/>
+	
+	<strong>Nivoslideshow on portfolio page</strong><br/>
+	
+	<p>
+		Below is example code
+	</p>
+	
+<pre>
+&lt;div class=&quot;nivo_border&quot; style=&quot;width:920px;height:400px;&quot;&gt;
+    &lt;div id=&quot;1805728727&quot; class=&quot;nivoslide&quot; style=&quot;width:920px;height:400px; visibility: hidden&quot;&gt;
+    	&lt;img src=&quot;example/nivo1.png&quot; alt=&quot;&quot;/&gt; 
+    	&lt;img src=&quot;example/nivo2.png&quot; alt=&quot;&quot;/&gt; 
+    	&lt;img src=&quot;example/nivo3.png&quot; alt=&quot;&quot;/&gt; 
+    	&lt;img src=&quot;example/nivo4.png&quot; alt=&quot;&quot;/&gt; 
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;br class=&quot;clear&quot;/&gt;
+
+&lt;script&gt;
+jQuery(window).load(function() { 
+    jQuery('#1805728727').nivoSlider({ pauseTime: 5000, pauseOnHover: true, effect: 'boxRainGrow', controlNav: true, captionOpacity: 1, directionNavHide: false, controlNavThumbs: true, controlNavThumbsFromRel:false, afterLoad: function(){ 
+    		jQuery('#1805728727').css('visibility', 'visible');
+    	} 
+    }); 
+});
+&lt;/script&gt;
+</pre>
+	
+	<br/>
+	
+	<strong>Portfolio 3 columns</strong><br/>
+	
+	<p>
+		Below is example code
+	</p>
+	
+<pre>
+&lt;div class=&quot;one_third&quot; style=&quot;margin-right:3%&quot;&gt; 
+    &lt;a title=&quot;Admin Panel&quot; href=&quot;#&quot; class=&quot;one_third_img&quot;&gt; 
+        &lt;img src=&quot;example/260x160_1.png&quot; alt=&quot;&quot; class=&quot;img_nofade&quot;/&gt; 
+    &lt;/a&gt; 
+    
+    &lt;br class=&quot;clear&quot;/&gt;&lt;br/&gt; 
+    
+    &lt;div class=&quot;portfolio_desc&quot;&gt; 
+        &lt;h5 class=&quot;cufon&quot;&gt;Admin Panel&lt;/h5&gt;
+        &lt;span&gt;This is an example about us page. You can edit this information...&lt;/span&gt; 
+    &lt;/div&gt; 
+&lt;/div&gt; 
+    				    
+&lt;div class=&quot;one_third&quot; style=&quot;margin-right:3%&quot;&gt; 
+    &lt;a title=&quot;Custom Widgets&quot; href=&quot;#&quot; class=&quot;one_third_img&quot;&gt; 
+        &lt;img src=&quot;example/260x160_2.png&quot; alt=&quot;&quot; class=&quot;img_nofade&quot;/&gt; 
+    &lt;/a&gt; 
+    
+    &lt;br class=&quot;clear&quot;/&gt;&lt;br/&gt; 
+    										
+    &lt;div class=&quot;portfolio_desc&quot;&gt; 
+    	&lt;h5 class=&quot;cufon&quot;&gt;Custom Widgets&lt;/h5&gt; 
+    	&lt;span&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...&lt;/span&gt; 
+    &lt;/div&gt; 
+&lt;/div&gt; 
+    				    
+&lt;div class=&quot;one_third last&quot; style=&quot;margin-right:3%&quot;&gt; 
+    &lt;a title=&quot;Video Options&quot; href=&quot;#&quot; class=&quot;one_third_img&quot;&gt; 
+        &lt;img src=&quot;example/260x160_3.png&quot; alt=&quot;&quot; class=&quot;img_nofade&quot;/&gt; 
+    &lt;/a&gt; 
+    
+    &lt;br class=&quot;clear&quot;/&gt;&lt;br/&gt; 
+    
+    &lt;div class=&quot;portfolio_desc&quot;&gt; 
+        &lt;h5 class=&quot;cufon&quot;&gt;Video Options&lt;/h5&gt; 
+        &lt;span&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...&lt;/span&gt; 
+    &lt;/div&gt; 
+&lt;/div&gt; 
+    				    
+&lt;br class=&quot;clear&quot;/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+</pre>
+	
+	<br/>
+	
+	<strong>Portfolio 4 columns</strong><br/>
+	
+	<p>
+		Below is example code
+	</p>
+	
+<pre>
+&lt;div class=&quot;one_fourth&quot; style=&quot;margin-right:2%&quot;&gt; 
+    &lt;a title=&quot;Admin Panel&quot; href=&quot;#&quot; class=&quot;one_fourth_normal&quot;&gt; 
+    	&lt;img src=&quot;example/190x120_1.png&quot; alt=&quot;&quot; class=&quot;img_nofade&quot;/&gt; 
+    &lt;/a&gt; 
+    &lt;br class=&quot;clear&quot;/&gt;&lt;br/&gt; 
+    &lt;div class=&quot;portfolio_desc&quot;&gt; 
+    	&lt;h5 class=&quot;cufon&quot;&gt;Admin Panel&lt;/h5&gt; 
+    	&lt;span&gt;This is an example about us page. You can edit&acirc;&brvbar;&lt;/span&gt; 
+    &lt;/div&gt; 
+&lt;/div&gt; 
+    				    
+&lt;div class=&quot;one_fourth&quot; style=&quot;margin-right:2%&quot;&gt; 
+    &lt;a title=&quot;Custom Widgets&quot; href=&quot;#&quot; class=&quot;one_fourth_normal&quot;&gt; 
+    	&lt;img src=&quot;example/190x120_2.png&quot; alt=&quot;&quot; class=&quot;img_nofade&quot;/&gt; 
+    &lt;/a&gt; 
+    &lt;br class=&quot;clear&quot;/&gt;&lt;br/&gt; 
+    &lt;div class=&quot;portfolio_desc&quot;&gt; 
+    	&lt;h5 class=&quot;cufon&quot;&gt;Custom Widgets&lt;/h5&gt; 
+    	&lt;span&gt;Lorem ipsum dolor sit amet, consectetur adipisicing&acirc;&brvbar;&lt;/span&gt; 
+    &lt;/div&gt; 
+&lt;/div&gt; 
+    				    
+&lt;div class=&quot;one_fourth&quot; style=&quot;margin-right:2%&quot;&gt; 
+    &lt;a title=&quot;Video Options&quot; href=&quot;#&quot; class=&quot;one_fourth_normal&quot;&gt; 
+    	&lt;img src=&quot;example/190x120_3.png&quot; alt=&quot;&quot; class=&quot;img_nofade&quot;/&gt; 
+    &lt;/a&gt; 
+    &lt;br class=&quot;clear&quot;/&gt;&lt;br/&gt; 
+    &lt;div class=&quot;portfolio_desc&quot;&gt; 
+    	&lt;h5 class=&quot;cufon&quot;&gt;Video Options&lt;/h5&gt; 
+    	&lt;span&gt;Lorem ipsum dolor sit amet, consectetur adipisicing&acirc;&brvbar;&lt;/span&gt; 
+    &lt;/div&gt; 
+&lt;/div&gt; 
+    				    
+&lt;div class=&quot;one_fourth last&quot; style=&quot;margin-right:2%&quot;&gt; 
+    &lt;a title=&quot;Skins &amp; Colors&quot; href=&quot;#&quot; class=&quot;one_fourth_normal&quot;&gt; 
+    	&lt;img src=&quot;example/1290x120_4.png&quot; alt=&quot;&quot; class=&quot;img_nofade&quot;/&gt; 
+    &lt;/a&gt; 
+    &lt;br class=&quot;clear&quot;/&gt;&lt;br/&gt; 
+    &lt;div class=&quot;portfolio_desc&quot;&gt; 
+    	&lt;h5 class=&quot;cufon&quot;&gt;Skins &amp; Colors&lt;/h5&gt; 
+    	&lt;span&gt;Lorem ipsum dolor sit amet, consectetur adipisicing&acirc;&brvbar;&lt;/span&gt; 
+    &lt;/div&gt; 
+&lt;/div&gt; 
+    				    
+&lt;br class=&quot;clear&quot;/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+</pre>
+	
+	<br/>
+	
+	<strong>Image thumbnails with detail</strong><br/>
+	
+	<p>
+		Below is example code
+	</p>
+	
+<pre>
+&lt;div class=&quot;one_fourth&quot; style=&quot;margin-right:2%;margin-top:-20px&quot;&gt; 
+    &lt;a title=&quot;Admin Panel&quot; href=&quot;#&quot; class=&quot;one_fourth_detail_img&quot;&gt; 
+    	&lt;img src=&quot;example/350x370_1.png&quot; alt=&quot;&quot;/&gt;
+    	&lt;div class=&quot;one_fourth_detail_div&quot;&gt; 
+    		&lt;h5 class=&quot;cufon&quot;&gt;Your portfolio title&lt;/h5&gt; 
+    		&lt;div class=&quot;post_detail&quot;&gt; 
+    			date: 22 Oct 2010																		
+    		&lt;/div&gt; 
+    		&lt;br/&gt; 
+    		&lt;span&gt;Lorem ipsum dolor sit amet, cons tempor incididunt ut labolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labolore magna aliqua. Ut enim&acirc;�&brvbar;&lt;/span&gt; 
+    	&lt;/div&gt; 
+    &lt;/a&gt; 
+&lt;/div&gt; 
+    				    
+&lt;div class=&quot;one_fourth&quot; style=&quot;margin-right:2%;margin-top:-20px&quot;&gt; 
+    &lt;a title=&quot;Custom Widgets&quot; href=&quot;#&quot; class=&quot;one_fourth_detail_img&quot;&gt; 
+    	&lt;img src=&quot;example/350x370_2.png&quot; alt=&quot;&quot;/&gt;
+    	&lt;div class=&quot;one_fourth_detail_div&quot;&gt; 
+    		&lt;h5 class=&quot;cufon&quot;&gt;Your portfolio title&lt;/h5&gt; 
+    		&lt;div class=&quot;post_detail&quot;&gt; 
+    			date: 22 Oct 2010																		
+    		&lt;/div&gt; 
+    		&lt;br/&gt; 
+    		&lt;span&gt;Lorem ipsum dolor sit amet, cons tempor incididunt ut labolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labolore magna aliqua. Ut enim&acirc;�&brvbar;&lt;/span&gt; 
+    	&lt;/div&gt;
+    &lt;/a&gt; 
+&lt;/div&gt; 
+
+&lt;div class=&quot;one_fourth&quot; style=&quot;margin-right:2%;margin-top:-20px&quot;&gt; 
+    &lt;a title=&quot;Video Options&quot; href=&quot;#&quot; class=&quot;one_fourth_detail_img&quot;&gt; 
+    	&lt;img src=&quot;example/350x370_3.png&quot; alt=&quot;&quot;/&gt;
+    	&lt;div class=&quot;one_fourth_detail_div&quot;&gt; 
+    		&lt;h5 class=&quot;cufon&quot;&gt;Your portfolio title&lt;/h5&gt; 
+    		&lt;div class=&quot;post_detail&quot;&gt; 
+    			date: 22 Oct 2010																		
+    		&lt;/div&gt; 
+    		&lt;br/&gt; 
+    		&lt;span&gt;Lorem ipsum dolor sit amet, cons tempor incididunt ut labolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labolore magna aliqua. Ut enim&acirc;�&brvbar;&lt;/span&gt; 
+    	&lt;/div&gt;
+    &lt;/a&gt; 
+&lt;/div&gt;
+
+&lt;div class=&quot;one_fourth last&quot; style=&quot;margin-right:2%;margin-top:-20px&quot;&gt; 
+    &lt;a title=&quot;Skins &amp; Colors&quot; href=&quot;#&quot; class=&quot;one_fourth_detail_img&quot;&gt; 
+    	&lt;img src=&quot;example/350x370_4.png&quot; alt=&quot;&quot;/&gt;
+    	&lt;div class=&quot;one_fourth_detail_div&quot;&gt; 
+    		&lt;h5 class=&quot;cufon&quot;&gt;Your portfolio title&lt;/h5&gt; 
+    		&lt;div class=&quot;post_detail&quot;&gt; 
+    			date: 22 Oct 2010																		
+    		&lt;/div&gt; 
+    		&lt;br/&gt; 
+    		&lt;span&gt;Lorem ipsum dolor sit amet, cons tempor incididunt ut labolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labolore magna aliqua. Ut enim&acirc;�&brvbar;&lt;/span&gt; 
+    	&lt;/div&gt;
+    &lt;/a&gt; 
+&lt;/div&gt;
+</pre>
+	
+	<br/>
+	
+	<strong>Image Gallery</strong><br/>
+	
+	<p>
+		Below is example code.
+	</p>
+	
+<pre>
+&lt;div class=&quot;one_fourth&quot; style=&quot;margin-right:2%;margin-top:-20px&quot;&gt; 
+    &lt;a title=&quot;Admin Panel&quot; href=&quot;example/1.png&quot; class=&quot;one_fourth_img&quot; rel=&quot;gallery&quot;&gt; 
+    	&lt;img src=&quot;example/350x370_1.png&quot; alt=&quot;&quot;/&gt; 
+    &lt;/a&gt; 
+&lt;/div&gt; 
+    				    
+&lt;div class=&quot;one_fourth&quot; style=&quot;margin-right:2%;margin-top:-20px&quot;&gt; 
+    &lt;a title=&quot;Custom Widgets&quot; href=&quot;example/2.png&quot; class=&quot;one_fourth_img&quot; rel=&quot;gallery&quot;&gt; 
+    	&lt;img src=&quot;example/350x370_2.png&quot; alt=&quot;&quot;/&gt; 
+    &lt;/a&gt; 
+&lt;/div&gt; 
+
+&lt;div class=&quot;one_fourth&quot; style=&quot;margin-right:2%;margin-top:-20px&quot;&gt; 
+    &lt;a title=&quot;Video Options&quot; href=&quot;example/3.png&quot; class=&quot;one_fourth_img&quot; rel=&quot;gallery&quot;&gt; 
+    	&lt;img src=&quot;example/350x370_3.png&quot; alt=&quot;&quot;/&gt; 
+    &lt;/a&gt; 
+&lt;/div&gt;
+
+&lt;div class=&quot;one_fourth last&quot; style=&quot;margin-right:2%;margin-top:-20px&quot;&gt; 
+    &lt;a title=&quot;Skins &amp; Colors&quot; href=&quot;example/4.png&quot; class=&quot;one_fourth_img&quot; rel=&quot;gallery&quot;&gt; 
+    	&lt;img src=&quot;example/350x370_4.png&quot; alt=&quot;&quot;/&gt; 
+    &lt;/a&gt; 
+&lt;/div&gt;
+</pre>
+
+	<br/>
+	
+	<strong>How to add image content to Gallery?</strong><br/>
+	
+	<p>
+		Below is example code of adding image content on gallery 4 columns page.
+	</p>
+	
+<pre>
+&lt;div class=&quot;one_fourth&quot;&gt;
+	&lt;div class=&quot;gallery_image&quot;&gt;
+	    &lt;a href=&quot;example/zoom/interior1.jpg&quot; class=&quot;portfolio_image&quot;&gt;
+	    	&lt;img src=&quot;example/gallery4/interior4.jpg&quot; alt=&quot;&quot; class=&quot;frame&quot;/&gt;
+	    &lt;/a&gt;
+	    
+	    &lt;span class=&quot;gallery4_hover&quot;&gt;
+	    	&lt;img src=&quot;images/icon_zoom.png&quot; alt=&quot;&quot;/&gt;
+	    &lt;/span&gt;
+	&lt;/div&gt;	
+	
+	&lt;div class=&quot;gallery_desc&quot;&gt;
+	    &lt;h4 class=&quot;cufon&quot;&gt;Enter Title Here&lt;/h4&gt;&lt;br/&gt;
+	    &lt;p&gt;
+	    	You can easily embed your image and it will instantly zoom to full-size one once user click the image! You can also enter more description or images about your item here.
+	    &lt;/p&gt;
+	    &lt;br/&gt;
+	    &lt;a class=&quot;button&quot; href=&quot;&quot;&gt;
+	    	&lt;span&gt;Read More&lt;/span&gt;
+	    &lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+	<br/>
+		
+	<strong>Page with right side bar</strong><br/>
+	
+	<p>Page with right side bar. The main content contain inside a div class name "sidebar_content" and the side bar content contain inside a div class name "sidebar_wrapper". Below is example code</p>
+	
+<pre>
+&lt;div class=&quot;sidebar_content&quot;&gt;
+	Your Content here
+&lt;/div&gt;
+	
+&lt;div class=&quot;sidebar_wrapper&quot;&gt;
+	&lt;div class=&quot;sidebar&quot;&gt;
+	
+	    &lt;div class=&quot;content&quot;&gt;
+	    
+	    	Your sidebar content here
+	    	
+	    &lt;/div&gt;
+	
+	&lt;/div&gt;
+	&lt;br class=&quot;clear&quot;/&gt;
+	
+	&lt;div class=&quot;sidebar_bottom&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+	
+	<strong>Full width page</strong><br/>
+	
+	<p>Full width page. The main content contain inside a div class name "inner_wrapper". Below is example code</p>
+	
+<pre>
+&lt;div class=&quot;inner_wrapper&quot;&gt;
+	Your content here
+&lt;/div&gt;
+</pre>
+
+	<br/>
+
+	<strong>Contact us page</strong>
+		
+		<p><strong>Change contact address and info</strong></p>
+		
+		<p>Open "contact.html". Make necessary changes and save file</p>
+		
+		<p><strong>Setup contact form mail</strong></p>
+		
+		<p>Open "contact.php". This PHP file will send message from contact us page to your email address.</p>
+		
+		<p><img src="assets/images/mailer.png"/></p>
+		
+		<ol>
+			<li>Change DEST_EMAIL to your email address</li>
+			<li>Change SUBJECT_EMAIL to some text more meaningful to you ex. contact from my portfolio page</li>
+		</ol>
+		
+	<br/>
+		
+		<h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+
+		<p>I'm using five CSS files in this theme. The first file contains all of the specific stylings for the page. The file is separated into sections using:</p>  
+
+<pre>	
+	/* CSS Reset */
+
+	some code
+
+	/* Global layout */
+	
+	some code
+	
+	/* Input layout */
+	
+	some code
+</pre>
+	<br/><br/>
+
+		<p>The second file is a styling for jQuery UI element.</p>
+		<p>The third file is a styling for modal window.</p>
+		<p>The fourth and fifth file is a styling for HTML5 video.</p>
+		
+		<p>If you would like to edit a specific section of the site, simply find the appropriate label in the CSS file, and then scroll down until you find the appropriate style that needs to be edited.</p> 
+		
+		<hr>
+		
+		<h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This theme imports ten Javascript files.</p>
+		
+		<ol>
+			<li>jQuery</li>
+			<li>jQuery UI</li>
+			<li>jQuery Validate</li>
+			<li>jQuery fancybox</li>
+			<li>jQuery anythingSlider</li>
+			<li>jQuery nivoslider</li>
+			<li>jQuery coinslider</li>
+			<li>jQuery easing</li>
+			<li>Browser check</li>
+			<li>Custom script</li>
+		</ol>
+		  
+		<ol>
+			<li>jQuery and jQuery UI are a Javascript library that greatly reduces the amount of code that you must write.</li>
+			<li>jQuery validate contact form</li>
+			<li>jQuery Fancybox create a nice popup window using in gallery</li>
+			<li>jQuery anythingSlider for homepage and portfolio slider</li>
+			<li>jQuery nivoslider for homepage slider</li>
+			<li>jQuery coinslider for homepage slider</li>
+			<li>jQuery easing for slider transition effect</li>
+			<li>Browser check check browser name and version</li>
+			<li>Most of the animation in this theme is carried out from the customs scripts.</li>
+		</ol>
+		
+		
+		<hr>
+		
+		<h3 id="credits"><strong>E) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've used the following script, images, icons or other files as listed.
+		
+		<ul>
+			<li>jQuery UI <a href="http://jqueryui.com/">http://jqueryui.com/</a></li>
+			<li>jQuery validate <a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/">http://bassistance.de/jquery-plugins/jquery-plugin-validation/</a></li>
+			<li>jQuery Fancybox <a href="http://fancybox.net/">http://fancybox.net/</a></li>
+			<li>jQuery anythingSlider <a href="http://css-tricks.com/anythingslider-jquery-plugin/">http://css-tricks.com/anythingslider-jquery-plugin/</a></li>
+			<li>jQuery nivoslider <a href="http://nivo.dev7studios.com/">http://nivo.dev7studios.com/</a></li>
+			<li>jQuery coinslider <a href="http://workshop.rs/projects/coin-slider/">http://workshop.rs/projects/coin-slider/</a></li>
+			<li>jQuery validate <a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/">http://bassistance.de/jquery-plugins/jquery-plugin-validation/</a></li>
+			<li>Fonts for commercial use <a href="http://www.fontsquirrel.com/">http://www.fontsquirrel.com/</a></li>
+		</ul>
+		
+
+		<hr>
+
+		
+		
+		<p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>Peerapong Pulpipatnan</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
