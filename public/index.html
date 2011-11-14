@@ -62,7 +62,7 @@
 
               <div class="menu-main-menu-container">
                 <ul id="main_menu" class="nav">
-                  <li class="current-menu-item"><a href="index.html">Home</a>
+                  <li class="current-menu-item"><a href="index.html">Hjem</a>
                 <!--
                   <ul class="sub-menu">
                     <li><a href="index.html">Homepage Style 1</a></li>
@@ -73,7 +73,7 @@
                   </ul>
                   -->
                 </li>
-                <li><a href="#">Porteføljer</a>
+                <li><a href="#">Portefølje</a>
                   <ul class="sub-menu">
                     <li><a href="portfolios_powest.html">Powest</a></li>
                     <li><a href="portfolios_imagenet.html">Imagenet</a></li>
@@ -89,7 +89,7 @@
                     <li><a href="pricing_4columns.html">Pricing 4 Columns</a></li>
                   </ul>
                 </li -->
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
               </ul>
             </div>
           </div>
@@ -147,14 +147,15 @@
             <ul>
               <li id="anythingslide1">
                 <a href="#">
-                  <img src="example/slide1.png" alt=""/>
+                  <img src="example/slide1-portfolio.png" alt=""/>
                 </a>
               </li>
               <li id="anythingslide2">
                 <a href="#">
-                  <img src="example/slide2.png" alt=""/>
+                  <img src="example/slide2-kryssplattform.png" alt=""/>
                 </a>
               </li>
+<!--
               <li id="anythingslide3">
                 <a href="#">
                   <img src="example/slide3.png" alt=""/>
@@ -162,9 +163,10 @@
               </li>
               <li id="anythingslide4">
                 <a href="#">
-                  <img src="example/slide4.png" alt=""/>
+                  <img src="example/slide4-kryssplattform.png" alt=""/>
                 </a>
               </li>
+-->
             </ul>
           </div>
         </div>
@@ -174,9 +176,9 @@
       $j('#anything_slider').anythingSlider({
           easing: "easeInOutExpo",
           autoPlay: true,
-          delay: 5000,
+          delay: 10000,
           startStopped: false,
-          animationTime: 5000,
+          animationTime: 1000,
           hashTags: false,
           buildNavigation: true,
           buildArrows: true,
@@ -185,16 +187,15 @@
           stopText: "Stop"
       });
 
-        $j('#anything_slider').hover(function()
-      {
+       // $j('#anything_slider').hover(function()
+      //{
         $j(this).find('.arrow').css('z-index', '9999');
         $j(this).find('.arrow').css('visibility', 'visible');
-      },
-      function()
-      {
-        $j(this).find('.arrow').css('visibility', 'hidden');
-
-      });
+      //},
+      //function()
+      //{
+      //  $j(this).find('.arrow').css('visibility', 'hidden');
+      //});
     });
 </script>
 
@@ -209,7 +210,7 @@
             <h1 class="tagline_header cufon">rubynor optimerer over forretningsverdi </h1>
           </div>
           <div style="float:right;margin:0 7px 0 0">
-            <a class="button" href="#">Kontakt oss</a>
+            <a class="button" href="/contact.html">Kontakt oss</a>
           </div>
         </div>
     </div>
@@ -224,15 +225,15 @@
 
         <div class="standard_wrapper small">
           <div class="one_third">
-            <h5>Skyen</h5>
+          <h5>Kjapt ut i markedet</h5>
             <p>
-            <img src="example/Plus.png" class="alignleft" alt=""/>
-            Vi bygger webapplikasjoner som er skalerbare og robuste i sin natur. Skyen er et selskrevent valg for oss, og 80% av Fortune 500. Få buzz-ord er ukjente for oss, vi eksperimenterer mye. Det er utrolig hvor mye bra som har skjedd de siste årene.
+            <img src="example/Clock.png" class="alignleft" alt=""/>
+            Time to market (TTM) er essensielt for suksess, i vår mening. I markedet lærer du hva som virkelig fungerer. Det er overraskende mange positive sideeffekter ved å lansere tidlig. Dette er selve kjernen i Lean Startup.
             </p>
           </div>
 
           <div class="one_third">
-            <h5>Annerledes investor</h5>
+            <h5>En Annerledes investor</h5>
             <p>
             <img src="example/Piechart.png" class="alignleft" alt=""/>
             Vi er en annerledes investor. Kompetanse og ekspertise er alfa og omega for suksess i webbaserte prosjekter. Du stiller med idé, domenekunnskap og nettverk, vi stiller med bevist gjennomføringsdyktighet av IT-prosjekter. Kontakt oss for informasjon.
@@ -257,10 +258,10 @@
           </div>
 
           <div class="one_third">
-            <h5>Kjapt ut i markedet</h5>
+            <h5>Skyen</h5>
             <p>
-            <img src="example/Clock.png" class="alignleft" alt=""/>
-            Time to market (TTM) er essensielt for suksess, i vår mening. I markedet lærer du hva som virkelig fungerer. Det er overraskende mange positive sideeffekter ved å lansere tidlig. Dette er selve kjernen i Lean Startup.
+            <img src="example/Plus.png" class="alignleft" alt=""/>
+            Vi bygger webapplikasjoner som er skalerbare og robuste i sin natur. Skyen er et selskrevent valg for oss, og 80% av Fortune 500. Få buzz-ord er ukjente for oss, vi eksperimenterer mye. Det er utrolig hvor mye bra som har skjedd de siste årene.
             </p>
           </div>
 
@@ -291,76 +292,50 @@
 
       <ul class="sidebar_widget">
         <li class="widget">
-          <h2 class="widgettitle">Popular Posts</h2>
+          <h2 class="widgettitle">Metodikk</h2>
           <ul class="posts blog black_wrapper">
             <li>
-              <h6 class="cufon"><a href="#">Unlimited Colors</a></h6>
-              Bulla fringilla purus at leo dignissim congue. Mauris elementum accumsan leo vel tempor. Aenean sagittis…<br/><br/>
+              <h6 class="cufon"><a href="#">Smidige metoder</a></h6>
+              Smidig utviklingsmetodikk står sentralt. Smidigkonferansene og xp meetup er en gode arenaer for å lære mer. Vi holder også foredrag i lean og smidig.  <br/><br/>
             </li>
             <li>
-              <h6 class="cufon"><a href="#">Unlimited Sidebar Support</a></h6>
-              Bulla fringilla purus at leo dignissim congue. Mauris elementum accumsan leo vel tempor. Aenean sagittis…
+              <h6 class="cufon"><a href="#">Lean Software Development</a></h6>
+              Lean og smidig overlapper mye, men de har noe forskjellig fokus. Lean tar mer et ovenfra-ned perspektiv og drar med organisasjonen. Det handler rett og slett om å gjøre veien fra idé til produkt kortest mulig. Google på Mary Poppendieck.
             </li>
+
           </ul>
         </li>
+    <li class="widget">
+          <h2 class="widgettitle">Teknologi</h2>
+          <ul class="posts blog black_wrapper">
+        <li>
+          <h6 class="cufon"><a href="#">Ruby</a></h6>
+           Vi bruker ruby til backend, med Rails eller Sinatra som rammeverk. Som database bruker vi gjerne NoSql, som MongoDB, ofte i kombinasjon med postegresql eller MySql, eller en av dem alene. Vi velger det vi mener er best til jobben. Vi lager json-apier så det kan brukes av iphone, android apps eller andre systemer. Det samme brukes av frontend, med lettvekts javascript og html/css. Følg ruby i Norge på <a href="http://irb.no">irb.no</a>
+              </li>
+          </ul>
+        </li>
+
         <li class="widget">
+          <h2 class="widgettitle">Oppdateringer</h2>
+          <ul class="posts blog black_wrapper">
+            <li><h6 class="cufon"><a href="#">Twitter</a></h6></li>
+          <li><a href="http://twitter.com/rubynor">@rubynor</a></li>
+            <li><a href="http://twitter.com/ole_morten">@ole_morten</a></li>
+            <li><h6 class="cufon"><a href="#">Blogg</a></h6></li>
+            <li><a href="http://olemortenamundsen.wordpress.com">oma blog</a> (CTO)</li>
+          </ul>
+        </li>
+     <li class="widget">
           <h2 class="widgettitle">Meta</h2>
           <ul>
             <li><a href="#">Site Admin</a></li>
-            <li><a href="#">Log out</a></li>
-            <li><a href="#" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
-            <li><a href="#" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
-            <li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>
-          </ul>
-        </li>
-        <li class="widget">
-          <h2 class="widgettitle">Recent Posts</h2>
-          <ul>
-            <li><a href="#" title="Easy to use Image Gallery">Easy to use Image Gallery</a></li>
-            <li><a href="#" title="Unlimited Colors">Unlimited Colors</a></li>
-            <li><a href="#" title="Advanced Shortcodes">Advanced Shortcodes</a></li>
-            <li><a href="#" title="Custom Post Type Support">Custom Post Type Support</a></li>
-            <li><a href="#" title="Custom widgets for Blog">Custom widgets for Blog</a></li>
-          </ul>
-        </li>
-        <li class="widget">
-          <h2 class="widgettitle">Blogroll</h2>
-          <ul class='xoxo blogroll'>
-            <li><a href="http://codex.wordpress.org/">Documentation</a></li>
-            <li><a href="http://wordpress.org/extend/plugins/">Plugins</a></li>
-            <li><a href="http://wordpress.org/extend/ideas/">Suggest Ideas</a></li>
-            <li><a href="http://wordpress.org/support/">Support Forum</a></li>
-            <li><a href="http://wordpress.org/extend/themes/">Themes</a></li>
-            <li><a href="http://wordpress.org/news/">WordPress Blog</a></li>
-            <li><a href="http://planet.wordpress.org/">WordPress Planet</a></li>
+            <li><a href="#">Logg inn</a></li>
+            <li><a href="contact">Kontakt oss</a></li>
           </ul>
         </li>
       </ul>
 
       <br class="clear"/>
-
-      <div id="copyright">
-        <div class="standard_wrapper" style="text-shadow: 0 1px #000;">
-          <div style="float:right">
-            <a href="javascript:;" class="tipsy" title="Twitter">
-              <img src="images/about_icon/twitter.png" alt=""/>
-            </a>
-            <a href="javascript:;" class="tipsy" title="Flickr">
-              <img src="images/about_icon/flickr.png" alt=""/>
-            </a>
-            <a href="javascript:;" class="tipsy" title="RSS">
-              <img src="images/about_icon/rss.png" alt=""/>
-            </a>
-            <a href="javascript:;" class="tipsy" title="Yahoo">
-              <img src="images/about_icon/yahoo.png" alt=""/>
-            </a>
-          </div>
-
-          <div style="float:left;margin-top:10px">
-            Copyright © 2011 Peerapong. Remove this once after purchase from the ThemeForest.net
-          </div>
-          <br class="clear"/>
-      </div>
     </div>
 
     </div>

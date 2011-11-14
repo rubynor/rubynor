@@ -11,5 +11,8 @@ module Rubynor
     get '/' do
       redirect to('/index.html')
     end
+    get '/contact' do
+      redirect to('/contact.html')
+    end
   end
 end

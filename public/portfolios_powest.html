@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>Rubynor - Skapere av fantastiske, skalerbare og fremtidsrettede webapplikasjoner</title>
+
+<!-- Template stylesheet -->
+<link rel='stylesheet' id='jqueryui_css-css'  href='css/jqueryui/custom.css' type='text/css' media='all' />
+<link rel='stylesheet' id='screen_css-css'  href='css/screen.css' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox_css-css'  href='js/fancybox/jquery.fancybox-1.3.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='videojs_css-css'  href='js/video-js.css' type='text/css' media='all' />
+<link rel='stylesheet' id='vim_css-css'  href='js/skins/vim.css' type='text/css' media='all' />
+<link rel='stylesheet' id='colorpicker_css-css'  href='js/colorpicker/css/colorpicker.css' type='text/css' media='all' />
+
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/jquery-ui.js'></script>
+<script type='text/javascript' src='js/fancybox/jquery.fancybox-1.3.0.js'></script>
+<script type='text/javascript' src='js/jquery.easing.js'></script>
+<script type='text/javascript' src='js/jquery.nivo.slider.js'></script>
+<script type='text/javascript' src='js/anythingSlider.js'></script>
+<script type='text/javascript' src='js/hint.js'></script>
+<script type='text/javascript' src='js/jquery.validate.js'></script>
+<script type='text/javascript' src='js/cufon.js'></script>
+<script type='text/javascript' src='js/browser.js'></script>
+<script type='text/javascript' src='js/video.js'></script>
+<script type='text/javascript' src='js/jquery.tipsy.js'></script>
+<script type='text/javascript' src='js/colorpicker/js/colorpicker.js'></script>
+<script type='text/javascript' src='js/colorpicker/js/eye.js'></script>
+<script type='text/javascript' src='js/colorpicker/js/utils.js'></script>
+<script type='text/javascript' src='js/custom.js'></script>
+
+<!--[if lt IE 8]>
+<link rel="stylesheet" href="css/ie7.css" type="text/css" media="all"/>
+<![endif]-->
+
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="css/ie.css" type="text/css" media="all"/>
+<![endif]-->
+
+</head>
+
+
+<body class="page">
+
+  <!-- Begin template wrapper -->
+  <div id="wrapper">
+
+    <!-- Begin header -->
+    <div id="header_wrapper">
+      <div id="top_bar">
+          <div class="logo">
+            <!-- Begin logo -->
+
+
+            <a id="custom_logo" href="index.html"><img src="images/logo.png" alt=""/></a>
+
+            <!-- End logo -->
+          </div>
+
+          <!-- Begin main nav -->
+          <div id="menu_wrapper">
+
+              <div class="menu-main-menu-container">
+                <ul id="main_menu" class="nav">
+                  <li><a href="index.html">Hjem</a>
+                </li>
+                <li class="current-menu-item"><a href="#">Portefølje</a>
+                  <ul class="sub-menu">
+                    <li><a href="portfolios_powest.html">Powest</a></li>
+                    <li><a href="portfolios_imagenet.html">Imagenet</a></li>
+                    <li><a href="portfolios_activitymap.html">Activity-map</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact.html">Kontakt</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- End main nav -->
+
+        </div>
+
+        <br class="clear"/>
+
+
+
+      <div class="page_caption">
+        <div class="caption_inner">
+          <div class="caption_header">
+            <h1 class="cufon">Powest - Produksjonsplanlegging kraftverk</h1>
+          </div>
+        </div>
+      </div>
+
+      <div id="header_pattern"></div>
+
+      </div>
+      <!-- End header -->
+
+      <!-- Begin content -->
+      <div id="content_wrapper">
+
+        <div id="portfolios">
+        <div class="inner">
+
+          <!-- Begin main content -->
+          <div class="inner_wrapper">
+
+  <div id="powest"> <a href="http://powest.no"><img src="example/powest-logo.png" alt=""/></a> <p>Gå til <a href="http://powest.no">powest.no</a> og se stedets egen presentasjon.  </p></div>
+<br class="clear"/>
+  <h1> Svært høy grad av integrasjon</h1>
+<p>Powest integrer mot mange kraftstasjoner, mange av dem med svært ulike systemer. Antallet integrasjonspunkter er til nå 20, og vil stige for hver kraftstasjon som melder seg inn i systemet.</p>
+  <ul>
+  <li>Forskjellige typer bokser kan monteres i kraftstasjon</li>
+  <li>SMS kan sendes fra kraftstasjon</li>
+  <li>Koble seg til kraftstajons gjennom Kraftmeglerenes egne systemer</li>
+</ul>
+<p>Andre integrasjonspunkter:</p>
+<ul>
+  <li>Værdata fra yr</li>
+  <li>Værdata fra måleutstyr</li>
+  <li>Mottakssystem hos kraftmeglerne</li>
+  <li>Prisinformasjon Nordpool</li>
+  </ul>
+
+<h2>Polyglot</h2>
+<p>Powest benytter både PostgreSQL (relasjonsdatabase) og MongoDB (dokumentdatabase -NoSQL). De er egnet til forskjellige ting, med noe overlapp, vi bruker det sammen, for å få det beste ut av begge verdener. Enkelt fortalt brukes relasjonsdatabasen til relasjoner, mens dokumentdatabasen til dokumenter - som produksjonsplaner.</p>
+  <h2> Mange tidsbestemte bakgrunnsjobber</h2>
+  <p>Powest leverer produksjonsplaner for en uke frem i tid og sender nye planer minst 24 ganger i døgnet, pr kraftstasjon. Det gir mange bakgrunnsjobber og hver jobber på deadline, det er gitte frister for planer</p>
+
+<h2>Presentasjon av tidsserier</h2>
+
+<p>Produksjonsplaner er kjernevirksomheten i Powest og presentasjon av disse tidsseriene for eiere og operatører står sentralt</p>
+
+<p>
+
+<!--
+          <div class="standard_wrapper small">
+
+            <div class="nivo_border" style="width:920px;height:400px;">
+              <div id="1805728727" class="nivoslide" style="width:920px;height:400px; visibility: hidden">
+                <img src="example/nivo1.png" alt=""/>
+                <img src="example/nivo2.png" alt=""/>
+                <img src="example/nivo3.png" alt=""/>
+                <img src="example/nivo4.png" alt=""/>
+              </div>
+            </div>
+            <br class="clear"/>
+
+            <script>
+            jQuery(window).load(function() {
+              jQuery('#1805728727').nivoSlider({ pauseTime: 5000, pauseOnHover: true, effect: 'boxRainGrow', controlNav: true, captionOpacity: 1, directionNavHide: false, controlNavThumbs: true, controlNavThumbsFromRel:false, afterLoad: function(){
+                  jQuery('#1805728727').css('visibility', 'visible');
+                }
+              });
+            });
+            </script>
+
+            <br class="clear"/><br/>
+
+            <blockquote><h2 class="quote">You can include shortcode, HTML and text here. Above is an example of using slideshow shortcode to display your featured works</h2></blockquote>
+
+            <br class="clear"/>
+
+            <p>This is an example about us page. You can edit this information about your or your company. You also can use the pre styling elements. visit "Typography page". Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labolore magna aliqua. Ut enim ad minim veniam.</p>
+
+            <br/>
+
+
+-->
+
+
+            <!-- Begin portfolio content -->
+<!--
+            <div class="one_third" style="margin-right:3%">
+              <a title="Admin Panel" href="#" class="one_third_img">
+                  <img src="example/260x160_1.png" alt="" class="img_nofade"/>
+              </a>
+
+              <br class="clear"/><br/>
+
+              <div class="portfolio_desc">
+                  <h5 class="cufon">Admin Panel</h5>
+                  <span>This is an example about us page. You can edit this information...</span>
+              </div>
+            </div>
+
+            <div class="one_third" style="margin-right:3%">
+              <a title="Custom Widgets" href="#" class="one_third_img">
+                  <img src="example/260x160_2.png" alt="" class="img_nofade"/>
+              </a>
+
+              <br class="clear"/><br/>
+
+              <div class="portfolio_desc">
+                <h5 class="cufon">Custom Widgets</h5>
+                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...</span>
+              </div>
+            </div>
+
+            <div class="one_third last" style="margin-right:3%">
+              <a title="Video Options" href="#" class="one_third_img">
+                  <img src="example/260x160_3.png" alt="" class="img_nofade"/>
+              </a>
+
+              <br class="clear"/><br/>
+
+              <div class="portfolio_desc">
+                  <h5 class="cufon">Video Options</h5>
+                  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...</span>
+              </div>
+            </div>
+
+            <br class="clear"/><br/><br/><br/>
+
+            <div class="one_third" style="margin-right:3%">
+              <a title="Skins & Colors" href="#" class="one_third_img">
+                  <img src="example/260x160_4.png" alt="" class="img_nofade"/>
+              </a>
+
+              <br class="clear"/><br/>
+
+              <div class="portfolio_desc">
+                  <h5 class="cufon">Skins & Colors</h5>
+                  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod…</span>
+              </div>
+            </div>
+
+            <div class="one_third" style="margin-right:3%">
+              <a title="Slider Support" href="#" class="one_third_img">
+                  <img src="example/260x160_5.png" alt="" class="img_nofade"/>
+              </a>
+
+              <br class="clear"/><br/>
+
+              <div class="portfolio_desc">
+                  <h5 class="cufon">Slider Support</h5>
+                  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod…</span>
+              </div>
+            </div>
+
+            <div class="one_third last" style="margin-right:3%">
+              <a title="Multiple Slides" href="#" class="one_third_img">
+                  <img src="example/260x160_6.png" alt="" class="img_nofade"/>
+              </a>
+
+              <br class="clear"/><br/>
+
+              <div class="portfolio_desc">
+                  <h5 class="cufon">Multiple Slides</h5>
+                  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod…</span>
+                  </div>
+              </div>
+
+              <br class="clear"/>
+            </div>
+-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div><div>
+
+
+    </div>
+
+    <div class="bottom_shadow"></div>
+
+
+    <!-- Begin footer -->
+    <div id="footer">
+      <div id="footer_shadow"></div>
+
+      <ul class="sidebar_widget">
+        <li class="widget">
+          <h2 class="widgettitle">Metodikk</h2>
+          <ul class="posts blog black_wrapper">
+            <li>
+              <h6 class="cufon"><a href="#">Smidige metoder</a></h6>
+              Smidig utviklingsmetodikk står sentralt. Smidigkonferansene og xp meetup er en gode arenaer for å lære mer. Vi holder også foredrag i lean og smidig.  <br/><br/>
+            </li>
+            <li>
+              <h6 class="cufon"><a href="#">Lean Software Development</a></h6>
+              Lean og smidig overlapper mye, men de har noe forskjellig fokus. Lean tar mer et ovenfra-ned perspektiv og drar med organisasjonen. Det handler rett og slett om å gjøre veien fra idé til produkt kortest mulig. Google på Mary Poppendieck.
+            </li>
+
+          </ul>
+        </li>
+    <li class="widget">
+          <h2 class="widgettitle">Teknologi</h2>
+          <ul class="posts blog black_wrapper">
+        <li>
+          <h6 class="cufon"><a href="#">Ruby</a></h6>
+           Vi bruker ruby til backend, med Rails eller Sinatra som rammeverk. Som database bruker vi gjerne NoSql, som MongoDB, ofte i kombinasjon med postegresql eller MySql, eller en av dem alene. Vi velger det vi mener er best til jobben. Vi lager json-apier så det kan brukes av iphone, android apps eller andre systemer. Det samme brukes av frontend, med lettvekts javascript og html/css. Følg ruby i Norge på <a href="http://irb.no">irb.no</a>
+              </li>
+          </ul>
+        </li>
+
+        <li class="widget">
+          <h2 class="widgettitle">Oppdateringer</h2>
+          <ul class="posts blog black_wrapper">
+            <li><h6 class="cufon"><a href="#">Twitter</a></h6></li>
+          <li><a href="http://twitter.com/rubynor">@rubynor</a></li>
+            <li><a href="http://twitter.com/ole_morten">@ole_morten</a></li>
+            <li><h6 class="cufon"><a href="#">Blogg</a></h6></li>
+            <li><a href="http://olemortenamundsen.wordpress.com">oma blog</a> (CTO)</li>
+          </ul>
+        </li>
+     <li class="widget">
+          <h2 class="widgettitle">Meta</h2>
+          <ul>
+            <li><a href="#">Site Admin</a></li>
+            <li><a href="#">Logg inn</a></li>
+            <li><a href="contact">Kontakt oss</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <br class="clear"/>
+    </div>
+
+    </div>
+    <!-- End footer -->
+
+
+</div></div>
+
+</body>
+</html>
