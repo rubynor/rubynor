@@ -1,4 +1,4 @@
-# encoding: utf-8
+# coding: utf-8
 require 'sinatra/base'
 
 module Rubynor
@@ -9,10 +9,10 @@ module Rubynor
     end
 
     get '/' do
-      redirect to('/index.html')
+      erb :index
     end
-    get '/contact' do
-      redirect to('/contact.html')
+    get '/:path' do
+      erb params[:path].to_sym
     end
   end
 end
