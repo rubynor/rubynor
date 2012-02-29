@@ -61,54 +61,10 @@
 
     <!-- Begin header -->
     <div id="header_wrapper">
-      <div id="top_bar">
-          <div class="logo">
-            <!-- Begin logo -->
-
-
-            <a id="custom_logo" href="/"><img src="images/logo.png" alt=""/></a>
-
-            <!-- End logo -->
-          </div>
-
-          <!-- Begin main nav -->
-          <div id="menu_wrapper">
-
-              <div class="menu-main-menu-container">
-                <ul id="main_menu" class="nav">
-                  <li><a href="/">Hjem</a>
-                </li>
-                <li class="current-menu-item"><a href="#">Portefølje</a>
-                  <ul class="sub-menu">
-                    <li><a href="/portfolios_powest">Powest</a></li>
-                    <li><a href="/portfolios_imagenet">Imagenet</a></li>
-                    <li><a href="/portfolios_aktivitetskart">Activity-map</a></li>
-                  </ul>
-                </li>
-                <li><a href="/kontakt">Kontakt</a></li>
-              </ul>
-            </div>
-          </div>
-          <!-- End main nav -->
-
-        </div>
-
-        <br class="clear"/>
-
-
-
-      <div class="page_caption">
-        <div class="caption_inner">
-          <div class="caption_header">
-            <h1 class="cufon">Diagnostic Images, Anytime, Anywhere.</h1>
-          </div>
-        </div>
-      </div>
-
-      <div id="header_pattern"></div>
-
-      </div>
-      <!-- End header -->
+      <%= erb :_top_bar %>
+      <%= erb :_portfolio_title, :locals => {:title => "Diagnostic Images, Anytime, Anywhere"} %>
+    </div>
+    <!-- End header -->
 
       <!-- Begin content -->
       <div id="content_wrapper">
