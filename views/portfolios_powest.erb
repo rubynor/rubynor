@@ -11,6 +11,7 @@
 <link rel='stylesheet' id='videojs_css-css'  href='js/video-js.css' type='text/css' media='all' />
 <link rel='stylesheet' id='vim_css-css'  href='js/skins/vim.css' type='text/css' media='all' />
 <link rel='stylesheet' id='colorpicker_css-css'  href='js/colorpicker/css/colorpicker.css' type='text/css' media='all' />
+<link rel='stylesheet' id='screenrubynor_css-css'  href='css/screenrubynor.css' type='text/css' media='all' />
 
 <script type='text/javascript' src='js/jquery.js'></script>
 <script type='text/javascript' src='js/jquery-ui.js'></script>
@@ -66,233 +67,120 @@
     </div>
     <!-- End header -->
 
-      <!-- Begin content -->
-      <div id="content_wrapper">
+    <!-- Begin content -->
+    <div id="content_wrapper">
 
-        <div id="portfolios">
+      <div id="portfolios">
         <div class="inner">
 
           <!-- Begin main content -->
           <div class="inner_wrapper">
+            <div class="standard_wrapper small">
 
-  <div id="powest"> <a href="http://powest.no"><img src="example/powest-logo.png" alt=""/></a> <p>Gå til <a href="http://powest.no">powest.no</a> og se stedets egen presentasjon.  </p></div>
-<br class="clear"/>
-  <h1> Svært høy grad av integrasjon</h1>
-<p>Powest integrer mot mange kraftstasjoner, mange av dem med svært ulike systemer. Antallet integrasjonspunkter er til nå 20, og vil stige for hver kraftstasjon som melder seg inn i systemet.</p>
-  <ul>
-  <li>Forskjellige typer bokser kan monteres i kraftstasjon</li>
-  <li>SMS kan sendes fra kraftstasjon</li>
-  <li>Koble seg til kraftstajons gjennom Kraftmeglerenes egne systemer</li>
-</ul>
-<p>Andre integrasjonspunkter:</p>
-<ul>
-  <li>Værdata fra yr</li>
-  <li>Værdata fra måleutstyr</li>
-  <li>Mottakssystem hos kraftmeglerne</li>
-  <li>Prisinformasjon Nordpool</li>
-  </ul>
-
-<h2>Polyglot</h2>
-<p>Powest benytter både PostgreSQL (relasjonsdatabase) og MongoDB (dokumentdatabase -NoSQL). De er egnet til forskjellige ting, med noe overlapp. Vi bruker det sammen, for å få det beste ut av begge verdener. Enkelt fortalt brukes relasjonsdatabasen til relasjoner, mens dokumentdatabasen til dokumenter - som produksjonsplaner.</p>
-  <h2> Mange tidsbestemte bakgrunnsjobber</h2>
-  <p>Powest leverer produksjonsplaner for en uke frem i tid og sender nye planer minst 24 ganger i døgnet, pr kraftstasjon. Det gir mange bakgrunnsjobber og hver jobber på deadline, det er gitte frister for planer</p>
-
-<h2>Presentasjon av tidsserier</h2>
-
-<p>Produksjonsplaner er kjernevirksomheten i Powest og presentasjon av disse tidsseriene for eiere og operatører står sentralt</p>
-
-<p>
-
-<!--
-          <div class="standard_wrapper small">
-
-            <div class="nivo_border" style="width:920px;height:400px;">
-              <div id="1805728727" class="nivoslide" style="width:920px;height:400px; visibility: hidden">
-                <img src="example/nivo1.png" alt=""/>
-                <img src="example/nivo2.png" alt=""/>
-                <img src="example/nivo3.png" alt=""/>
-                <img src="example/nivo4.png" alt=""/>
+              <div class="nivo_border" style="width:920px;height:400px;">
+                <div id="1805728727" class="nivoslide" style="width:920px;height:400px; visibility: hidden">
+                  <img src="images/1portfolio/powest-frontpage.png" alt=""/>
+                  <img src="images/1portfolio/powest-prod.png" alt=""/>
+                  <img src="images/1portfolio/powest-mvf.png" alt=""/>
+                </div>
               </div>
-            </div>
-            <br class="clear"/>
+              <br class="clear"/>
 
-            <script>
-            jQuery(window).load(function() {
-              jQuery('#1805728727').nivoSlider({ pauseTime: 5000, pauseOnHover: true, effect: 'boxRainGrow', controlNav: true, captionOpacity: 1, directionNavHide: false, controlNavThumbs: true, controlNavThumbsFromRel:false, afterLoad: function(){
-                  jQuery('#1805728727').css('visibility', 'visible');
-                }
+              <script>
+              jQuery(window).load(function() {
+                jQuery('#1805728727').nivoSlider({ pauseTime: 7000, pauseOnHover: true, effect: 'boxRainGrow', controlNav: true, captionOpacity: 1, directionNavHide: false, controlNavThumbs: true, controlNavThumbsFromRel:false, afterLoad: function(){
+                    jQuery('#1805728727').css('visibility', 'visible');
+                  }
+                });
               });
-            });
-            </script>
-
-            <br class="clear"/><br/>
-
-            <blockquote><h2 class="quote">You can include shortcode, HTML and text here. Above is an example of using slideshow shortcode to display your featured works</h2></blockquote>
-
-            <br class="clear"/>
-
-            <p>This is an example about us page. You can edit this information about your or your company. You also can use the pre styling elements. visit "Typography page". Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dosectetur adipisicing elit, sed do.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labolore magna aliqua. Ut enim ad minim veniam.</p>
-
-            <br/>
-
-
--->
-
-
-            <!-- Begin portfolio content -->
-<!--
-            <div class="one_third" style="margin-right:3%">
-              <a title="Admin Panel" href="#" class="one_third_img">
-                  <img src="example/260x160_1.png" alt="" class="img_nofade"/>
-              </a>
+              </script>
 
               <br class="clear"/><br/>
 
-              <div class="portfolio_desc">
-                  <h5 class="cufon">Admin Panel</h5>
-                  <span>This is an example about us page. You can edit this information...</span>
-              </div>
-            </div>
-
-            <div class="one_third" style="margin-right:3%">
-              <a title="Custom Widgets" href="#" class="one_third_img">
-                  <img src="example/260x160_2.png" alt="" class="img_nofade"/>
-              </a>
-
-              <br class="clear"/><br/>
-
-              <div class="portfolio_desc">
-                <h5 class="cufon">Custom Widgets</h5>
-                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...</span>
-              </div>
-            </div>
-
-            <div class="one_third last" style="margin-right:3%">
-              <a title="Video Options" href="#" class="one_third_img">
-                  <img src="example/260x160_3.png" alt="" class="img_nofade"/>
-              </a>
-
-              <br class="clear"/><br/>
-
-              <div class="portfolio_desc">
-                  <h5 class="cufon">Video Options</h5>
-                  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...</span>
-              </div>
-            </div>
-
-            <br class="clear"/><br/><br/><br/>
-
-            <div class="one_third" style="margin-right:3%">
-              <a title="Skins & Colors" href="#" class="one_third_img">
-                  <img src="example/260x160_4.png" alt="" class="img_nofade"/>
-              </a>
-
-              <br class="clear"/><br/>
-
-              <div class="portfolio_desc">
-                  <h5 class="cufon">Skins & Colors</h5>
-                  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod…</span>
-              </div>
-            </div>
-
-            <div class="one_third" style="margin-right:3%">
-              <a title="Slider Support" href="#" class="one_third_img">
-                  <img src="example/260x160_5.png" alt="" class="img_nofade"/>
-              </a>
-
-              <br class="clear"/><br/>
-
-              <div class="portfolio_desc">
-                  <h5 class="cufon">Slider Support</h5>
-                  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod…</span>
-              </div>
-            </div>
-
-            <div class="one_third last" style="margin-right:3%">
-              <a title="Multiple Slides" href="#" class="one_third_img">
-                  <img src="example/260x160_6.png" alt="" class="img_nofade"/>
-              </a>
-
-              <br class="clear"/><br/>
-
-              <div class="portfolio_desc">
-                  <h5 class="cufon">Multiple Slides</h5>
-                  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod…</span>
-                  </div>
-              </div>
+              <blockquote><h2 class="quote">Powest automatiserer produksjonsplanlegging for kraftverk. Systemet integrerer med hvert enkelt kraftverk, samt meglersystemene.</h2></blockquote>
 
               <br class="clear"/>
+
+              <p> Powest AS ble etablert i 2010 og har siden kjørt stabilt i skyen. Gå til <a href="http://powest.no">powest.no</a> og se stedets egen presentasjon.  </p>
+
+
+
+              <p>Powest integrer mot mange kraftstasjoner, mange av dem med svært ulike systemer. Antallet integrasjonspunkter er til nå 20, og vil stige for hver kraftstasjon som melder seg inn i systemet.</p>
+              <ul>
+                <li>Forskjellige typer bokser kan monteres i kraftstasjon</li>
+                <li>SMS kan sendes fra kraftstasjon</li>
+                <li>Koble seg til kraftstajons gjennom Kraftmeglerenes egne systemer</li>
+              </ul>
+              <h5>Polyglot</h5>
+              <p>Powest benytter både PostgreSQL (relasjonsdatabase) og MongoDB (dokumentdatabase -NoSQL). De er egnet til forskjellige ting, med noe overlapp. Vi bruker det sammen, for å få det beste ut av begge verdener. Enkelt fortalt brukes relasjonsdatabasen til relasjoner, mens dokumentdatabasen til dokumenter - som produksjonsplaner.</p>
+              <h5> Mange tidsbestemte bakgrunnsjobber</h5>
+              <p>Powest leverer produksjonsplaner for en uke frem i tid og sender nye planer minst 24 ganger i døgnet, pr kraftstasjon. Det gir mange bakgrunnsjobber og hver jobber på deadline, det er gitte frister for planer</p>
+              <h5>Presentasjon av tidsserier</h5>
+
+              <p>Produksjonsplaner er kjernevirksomheten i Powest og presentasjon av disse tidsseriene for eiere og operatører står sentralt</p>
+
+
             </div>
--->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div><div>
+          </div> <!-- END MAIN CONTENT -->
+        </div> <!-- end inner -->
+     </div> <!-- end portfolio -->
+     <div class="bottom_shadow"></div>
 
 
-    </div>
+     <!-- Begin footer -->
+     <div id="footer">
+       <div id="footer_shadow"></div>
 
-    <div class="bottom_shadow"></div>
-
-
-    <!-- Begin footer -->
-    <div id="footer">
-      <div id="footer_shadow"></div>
-
-      <ul class="sidebar_widget">
-        <li class="widget">
-          <h2 class="widgettitle">Metodikk</h2>
-          <ul class="posts blog black_wrapper">
-            <li>
-              <h6 class="cufon"><a href="#">Smidige metoder</a></h6>
-              Smidig utviklingsmetodikk står sentralt. Smidigkonferansene og xp meetup er gode arenaer for å lære mer. Vi holder også foredrag i lean og smidig.  <br/><br/>
-            </li>
-            <li>
-              <h6 class="cufon"><a href="#">Lean Software Development</a></h6>
-              Lean og smidig overlapper mye, men de har noe forskjellig fokus. Lean tar mer et ovenfra-ned perspektiv og drar med organisasjonen. Det handler rett og slett om å gjøre veien fra idé til produkt kortest mulig. Google på Mary Poppendieck.
-            </li>
-
-          </ul>
-        </li>
-    <li class="widget">
-          <h2 class="widgettitle">Teknologi</h2>
-          <ul class="posts blog black_wrapper">
-        <li>
-          <h6 class="cufon"><a href="#">Ruby</a></h6>
-           Vi bruker ruby til backend, med Rails eller Sinatra som rammeverk. Som database bruker vi gjerne NoSql, som f.eks. MongoDB, ofte i kombinasjon med postegresql eller MySql, eller en av dem alene. Vi velger det vi mener er best til jobben. Vi lager json-apier så det kan brukes av iphone, android apps eller andre systemer. Det samme brukes av frontend, med lettvekts javascript og html/css. Følg ruby i Norge på <a href="http://irb.no">irb.no</a>
+        <ul class="sidebar_widget">
+          <li class="widget">
+            <h2 class="widgettitle">Metodikk</h2>
+            <ul class="posts blog black_wrapper">
+              <li>
+                <h6 class="cufon"><a href="#">Smidige metoder</a></h6>
+                Smidig utviklingsmetodikk står sentralt. Smidigkonferansene og xp meetup er gode arenaer for å lære mer. Vi holder også foredrag i lean og smidig.  <br/><br/>
               </li>
-          </ul>
-        </li>
+              <li>
+                <h6 class="cufon"><a href="#">Lean Software Development</a></h6>
+                Lean og smidig overlapper mye, men de har noe forskjellig fokus. Lean tar mer et ovenfra-ned perspektiv og drar med organisasjonen. Det handler rett og slett om å gjøre veien fra idé til produkt kortest mulig. Google på Mary Poppendieck.
+              </li>
 
-        <li class="widget">
-          <h2 class="widgettitle">Oppdateringer</h2>
-          <ul class="posts blog black_wrapper">
-            <li><h6 class="cufon"><a href="#">Twitter</a></h6></li>
-          <li><a href="http://twitter.com/rubynor">@rubynor</a></li>
-            <li><a href="http://twitter.com/ole_morten">@ole_morten</a></li>
-            <li><h6 class="cufon"><a href="#">Blogg</a></h6></li>
-            <li><a href="http://olemortenamundsen.wordpress.com">oma blog</a> (CTO)</li>
-          </ul>
-        </li>
-     <li class="widget">
-          <h2 class="widgettitle">Meta</h2>
-          <ul>
-            <li><a href="#">Site Admin</a></li>
-            <li><a href="#">Logg inn</a></li>
-            <li><a href="/kontakt">Kontakt oss</a></li>
-          </ul>
-        </li>
-      </ul>
+            </ul>
+          </li>
+          <li class="widget">
+            <h2 class="widgettitle">Teknologi</h2>
+            <ul class="posts blog black_wrapper">
+          <li>
+            <h6 class="cufon"><a href="#">Ruby</a></h6>
+             Vi bruker ruby til backend, med Rails eller Sinatra som rammeverk. Som database bruker vi gjerne NoSql, som f.eks. MongoDB, ofte i kombinasjon med postegresql eller MySql, eller en av dem alene. Vi velger det vi mener er best til jobben. Vi lager json-apier så det kan brukes av iphone, android apps eller andre systemer. Det samme brukes av frontend, med lettvekts javascript og html/css. Følg ruby i Norge på <a href="http://irb.no">irb.no</a>
+                </li>
+            </ul>
+          </li>
 
-      <br class="clear"/>
-    </div>
+          <li class="widget">
+            <h2 class="widgettitle">Oppdateringer</h2>
+            <ul class="posts blog black_wrapper">
+              <li><h6 class="cufon"><a href="#">Twitter</a></h6></li>
+            <li><a href="http://twitter.com/rubynor">@rubynor</a></li>
+              <li><a href="http://twitter.com/ole_morten">@ole_morten</a></li>
+              <li><h6 class="cufon"><a href="#">Blogg</a></h6></li>
+              <li><a href="http://olemortenamundsen.wordpress.com">oma blog</a> (CTO)</li>
+            </ul>
+          </li>
+          <li class="widget">
+            <h2 class="widgettitle">Meta</h2>
+            <ul>
+              <li><a href="#">Site Admin</a></li>
+              <li><a href="#">Logg inn</a></li>
+              <li><a href="/kontakt">Kontakt oss</a></li>
+            </ul>
+          </li>
+        </ul>
 
-    </div>
-    <!-- End footer -->
+        <br class="clear"/>
+      </div>
 
-
-</div></div>
+    </div><!-- End footer -->
+  </div> <!-- end template wrapper -->
 
 </body>
 </html>
