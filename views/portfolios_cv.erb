@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>Rubynor - Skapere av fantastiske, skalerbare og fremtidsrettede webapplikasjoner</title>
+
+<!-- Template stylesheet -->
+<link rel='stylesheet' id='jqueryui_css-css'  href='css/jqueryui/custom.css' type='text/css' media='all' />
+<link rel='stylesheet' id='screen_css-css'  href='css/screen.css' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox_css-css'  href='js/fancybox/jquery.fancybox-1.3.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='videojs_css-css'  href='js/video-js.css' type='text/css' media='all' />
+<link rel='stylesheet' id='vim_css-css'  href='js/skins/vim.css' type='text/css' media='all' />
+<link rel='stylesheet' id='colorpicker_css-css'  href='js/colorpicker/css/colorpicker.css' type='text/css' media='all' />
+<link rel='stylesheet' id='screenrubynor_css-css'  href='css/screenrubynor.css' type='text/css' media='all' />
+
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/jquery-ui.js'></script>
+<script type='text/javascript' src='js/fancybox/jquery.fancybox-1.3.0.js'></script>
+<script type='text/javascript' src='js/jquery.easing.js'></script>
+<script type='text/javascript' src='js/jquery.nivo.slider.js'></script>
+<script type='text/javascript' src='js/anythingSlider.js'></script>
+<script type='text/javascript' src='js/hint.js'></script>
+<script type='text/javascript' src='js/jquery.validate.js'></script>
+<script type='text/javascript' src='js/cufon.js'></script>
+<script type='text/javascript' src='js/browser.js'></script>
+<script type='text/javascript' src='js/video.js'></script>
+<script type='text/javascript' src='js/jquery.tipsy.js'></script>
+<script type='text/javascript' src='js/colorpicker/js/colorpicker.js'></script>
+<script type='text/javascript' src='js/colorpicker/js/eye.js'></script>
+<script type='text/javascript' src='js/colorpicker/js/utils.js'></script>
+<script type='text/javascript' src='js/custom.js'></script>
+
+<!--[if lt IE 8]>
+<link rel="stylesheet" href="css/ie7.css" type="text/css" media="all"/>
+<![endif]-->
+
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="css/ie.css" type="text/css" media="all"/>
+<![endif]-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27828405-1']);
+  _gaq.push(['_setDomainName', 'rubynor.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+
+
+<body class="page">
+
+  <!-- Begin template wrapper -->
+  <div id="wrapper">
+
+    <!-- Begin header -->
+    <div id="header_wrapper">
+      <%= erb :_top_bar %>
+      <%= erb :_portfolio_title, :locals => {:title => "NYTT! Partner for genialt CV-system"} %>
+    </div>
+    <!-- End header -->
+
+    <!-- Begin content -->
+    <div id="content_wrapper">
+
+      <div id="portfolios">
+        <div class="inner">
+
+          <!-- Begin main content -->
+          <div class="inner_wrapper">
+            <div class="standard_wrapper small">
+
+              <br class="clear"/><br/>
+
+              <blockquote><h2 class="quote">CVmalen hjelper deg lage godt formatert CVer og gir deg gode tips. Bedriftsvarianten gjør det enkelt å ha felles maler og tilpasse for alle innenfor en bedrift.</h2></blockquote>
+
+              <br class="clear"/>
+
+              <p> Rubynor AS har inngått partnerskap om å videreutvikling av både konseptene og systemene. Erling Wegger Linde Innovations har utviklet produktene og de ligger nå på <a href="http://cvmalen.no">cvmalen.no</a> og  <a href="http://konsulentselskapcv.no">konsulentselskapcv.no</a></p>
+
+
+
+              <h5>Bedriftsmaler for CV</h5>
+              <p>
+                I skrivende stund fokuseres det hovedsakelig på bedriftsløsningen på CV-vedlikeholdsproblemet. En side av problemet er å få mennesker til å oppdatere sine CVer, en annen er mulighetene for å endre malene og skreddersy innholdet som skal med i forbindelse med anbud. Den naturlige kundegruppen er konsulentbransjen, derav domenenavnet <a href="http://konsulentselskapcv.no">konsulentselskapcv.no</a>
+              </p>
+
+              <h5>CV-maler for privatpersoner</h5>
+              <p>
+                Prosjektet startet med et ønske om å få hjelp til å lage gode CVer. Det var vanskelig å få tak i maler og det er vrient å endre word-maler. Det er nærmest umulig å kopiere fra en word-cv til en annen, uten masse formatering som ikke passer. Men det går, bare du invester med nok tid! Eller du kan lage CVen på <a href="http://cvmalen.no">cvmalen.no</a> for 19kr og spare masse tid!
+              </p>
+
+              <h5>Imponerende teknologi </h5>
+              <p>Rubynor AS fikk innblikk i de teknologiske løsningene og ble meget imponert. Det benyttes Ruby med Sinatra og NoSQL-databasen MongoDB. Monitorering med New Relic RPM, Google Analytics, Chartbeat og Mixpanel er mildt sagt mer enn de fleste. Videre kjøres serverne i skyen, nærmere sagt Amazon og direkte på EC2. Det er sjeldent vi i Rubynor møter personer av dette kaliberet og vi gleder oss til å høste fruktene av samarbeidet.</p>
+
+            </div>
+          </div> <!-- END MAIN CONTENT -->
+        </div> <!-- end inner -->
+     </div> <!-- end portfolio -->
+     <div class="bottom_shadow"></div>
+
+
+     <!-- Begin footer -->
+     <div id="footer">
+       <div id="footer_shadow"></div>
+
+        <ul class="sidebar_widget">
+          <li class="widget">
+            <h2 class="widgettitle">Metodikk</h2>
+            <ul class="posts blog black_wrapper">
+              <li>
+                <h6 class="cufon"><a href="#">Smidige metoder</a></h6>
+                Smidig utviklingsmetodikk står sentralt. Smidigkonferansene og xp meetup er gode arenaer for å lære mer. Vi holder også foredrag i lean og smidig.  <br/><br/>
+              </li>
+              <li>
+                <h6 class="cufon"><a href="#">Lean Software Development</a></h6>
+                Lean og smidig overlapper mye, men de har noe forskjellig fokus. Lean tar mer et ovenfra-ned perspektiv og drar med organisasjonen. Det handler rett og slett om å gjøre veien fra idé til produkt kortest mulig. Google på Mary Poppendieck.
+              </li>
+
+            </ul>
+          </li>
+          <li class="widget">
+            <h2 class="widgettitle">Teknologi</h2>
+            <ul class="posts blog black_wrapper">
+          <li>
+            <h6 class="cufon"><a href="#">Ruby</a></h6>
+             Vi bruker ruby til backend, med Rails eller Sinatra som rammeverk. Som database bruker vi gjerne NoSql, som f.eks. MongoDB, ofte i kombinasjon med postegresql eller MySql, eller en av dem alene. Vi velger det vi mener er best til jobben. Vi lager json-apier så det kan brukes av iphone, android apps eller andre systemer. Det samme brukes av frontend, med lettvekts javascript og html/css. Følg ruby i Norge på <a href="http://irb.no">irb.no</a>
+                </li>
+            </ul>
+          </li>
+
+          <li class="widget">
+            <h2 class="widgettitle">Oppdateringer</h2>
+            <ul class="posts blog black_wrapper">
+              <li><h6 class="cufon"><a href="#">Twitter</a></h6></li>
+            <li><a href="http://twitter.com/rubynor">@rubynor</a></li>
+              <li><a href="http://twitter.com/ole_morten">@ole_morten</a></li>
+              <li><h6 class="cufon"><a href="#">Blogg</a></h6></li>
+              <li><a href="http://olemortenamundsen.wordpress.com">oma blog</a> (CTO)</li>
+            </ul>
+          </li>
+          <li class="widget">
+            <h2 class="widgettitle">Meta</h2>
+            <ul>
+              <li><a href="#">Site Admin</a></li>
+              <li><a href="#">Logg inn</a></li>
+              <li><a href="/kontakt">Kontakt oss</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <br class="clear"/>
+      </div>
+
+    </div><!-- End footer -->
+  </div> <!-- end template wrapper -->
+
+</body>
+</html>
