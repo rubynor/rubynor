@@ -1,61 +1,4 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="en-US">
-<head>
-<meta charset="UTF-8" />
-<title>Rubynor - Skapere av fantastiske, skalerbare og fremtidsrettede webapplikasjoner</title>
-
-<!-- Template stylesheet -->
-<link rel='stylesheet' id='jqueryui_css-css'  href='css/jqueryui/custom.css' type='text/css' media='all' />
-<link rel='stylesheet' id='screen_css-css'  href='css/screen.css' type='text/css' media='all' />
-<link rel='stylesheet' id='fancybox_css-css'  href='js/fancybox/jquery.fancybox-1.3.0.css' type='text/css' media='all' />
-<link rel='stylesheet' id='videojs_css-css'  href='js/video-js.css' type='text/css' media='all' />
-<link rel='stylesheet' id='vim_css-css'  href='js/skins/vim.css' type='text/css' media='all' />
-<link rel='stylesheet' id='colorpicker_css-css'  href='js/colorpicker/css/colorpicker.css' type='text/css' media='all' />
-<link rel='stylesheet' id='screenrubynor_css-css'  href='css/screenrubynor.css' type='text/css' media='all' />
-
-
-<script type='text/javascript' src='js/jquery.js'></script>
-<script type='text/javascript' src='js/jquery-ui.js'></script>
-<script type='text/javascript' src='js/fancybox/jquery.fancybox-1.3.0.js'></script>
-<script type='text/javascript' src='js/jquery.easing.js'></script>
-<script type='text/javascript' src='js/jquery.nivo.slider.js'></script>
-<script type='text/javascript' src='js/anythingSlider.js'></script>
-<script type='text/javascript' src='js/hint.js'></script>
-<script type='text/javascript' src='js/jquery.validate.js'></script>
-<script type='text/javascript' src='js/cufon.js'></script>
-<script type='text/javascript' src='js/browser.js'></script>
-<script type='text/javascript' src='js/video.js'></script>
-<script type='text/javascript' src='js/jquery.tipsy.js'></script>
-<script type='text/javascript' src='js/colorpicker/js/colorpicker.js'></script>
-<script type='text/javascript' src='js/colorpicker/js/eye.js'></script>
-<script type='text/javascript' src='js/colorpicker/js/utils.js'></script>
-<script type='text/javascript' src='js/custom.js'></script>
-
-<!--[if lt IE 8]>
-<link rel="stylesheet" href="css/ie7.css" type="text/css" media="all"/>
-<![endif]-->
-
-<!--[if lte IE 8]>
-<link rel="stylesheet" href="css/ie.css" type="text/css" media="all"/>
-<![endif]-->
-
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-27828405-1']);
-  _gaq.push(['_setDomainName', 'rubynor.com']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
-</head>
-
+<%= erb :_header %>
 
 <body class="home">
 
@@ -64,98 +7,7 @@
 
     <!-- Begin header -->
     <div id="header_wrapper">
-      <div id="top_bar">
-          <div class="logo">
-            <!-- Begin logo -->
-
-
-            <a id="custom_logo" href="/"><img src="images/logo.png" alt=""/></a>
-
-            <!-- End logo -->
-          </div>
-
-          <!-- Begin main nav -->
-          <div id="menu_wrapper">
-
-              <div class="menu-main-menu-container">
-                <ul id="main_menu" class="nav">
-                  <li class="current-menu-item"><a href="/">Hjem</a>
-                <!--
-                  <ul class="sub-menu">
-                    <li><a href="/">Homepage Style 1</a></li>
-                    <li><a href="index2.html">Homepage Style 2</a></li>
-                    <li><a href="index3.html">Homepage Style 3</a></li>
-                    <li><a href="index4.html">Homepage Style 4</a></li>
-                    <li><a href="index5.html">Homepage Style 5</a></li>
-                  </ul>
-                  -->
-                </li>
-                <li><a href="#">Portefølje</a>
-                  <ul class="sub-menu">
-                    <li><a href="/portfolios_powest">Powest</a></li>
-                    <li><a href="/portfolios_imagenet">Imagenet</a></li>
-                    <li><a href="/portfolios_aktivitetskart">Activity-map</a></li>
-                    <li><a href="/portfolios_cv">CVmalen</a></li>
-                  </ul>
-                </li>
-                <!-- li><a href="blog.html">Blog</a></li -->
-                <!-- li><a href="#">Pages</a>
-                  <ul class="sub-menu">
-                    <li><a href="about_us.html">About Us</a></li>
-                    <li><a href="our_services.html">Our Services</a></li>
-                    <li><a href="pricing_3columns.html">Pricing 3 Columns</a></li>
-                    <li><a href="pricing_4columns.html">Pricing 4 Columns</a></li>
-                  </ul>
-                </li -->
-                <li><a href="/kontakt">Kontakt</a></li>
-              </ul>
-            </div>
-          </div>
-          <!-- End main nav -->
-
-        </div>
-
-        <br class="clear"/>
-        <!--
-        <div id="option_wrapper">
-          <div class="inner">
-              <strong>Tilbakemelding</strong><br/>
-              <select name="pp_bg_pattern" id="pp_bg_pattern" style="margin-top:5px">
-                <option value="" >None</option>
-                <option value="ver_strip" >Vertical Strip</option>
-                <option value="hor_strip" >Horizontal Strip</option>
-                <option value="right_strip" selected=selected>Right Strip</option>
-                <option value="right_strip2" >Right Strip2</option>
-                <option value="left_strip" >Left Strip</option>
-                <option value="left_strip2" >Left Strip2</option>
-                <option value="square" >Square</option>
-                <option value="square2" >Square2</option>
-                <option value="dot" >Dot</option>
-                <option value="circle" >Circle</option>
-                <option value="flower" >Flower1</option>
-                <option value="flower2" >Flower2</option>
-                <option value="flower3" >Flower3</option>
-                <option value="flower4" >Flower4</option>
-                <option value="paper" >Paper</option>
-                <option value="gear" >Gear</option>
-                <option value="mosaic" >Mosaic</option>
-                <option value="metal" >Metal</option>
-                <option value="jeans" >Jeans</option>
-                <option value="bokeh" >Bokeh</option>
-              </select>
-              <br/><br/>
-              <strong>Background Color:</strong><br/>
-              <div id="bg_preview" style="background:#212c35;margin-top:5px;">&nbsp;</div>
-              <input type="hidden" id="pp_bg_color" name="pp_bg_color" value="#212c35" />
-            </div>
-        </div>
-        <div id="option_btn">
-          <img src="images/color.png" alt=""/>
-        </div>
-
-    <br class="clear"/>
--->
-
+     <%= erb :_top_bar, :locals => {menu_selection: 'home'}%>
 
     <div id="header_pattern"></div>
     <div id="slider_wrapper">
@@ -299,69 +151,11 @@
     </div>
     </div>
 
-  <div><div>
-
-
-    </div>
-
-    <div class="bottom_shadow"></div>
-
     <!-- Begin footer -->
-    <div id="footer">
-      <div id="footer_shadow"></div>
-
-      <ul class="sidebar_widget">
-        <li class="widget">
-          <h2 class="widgettitle">Metodikk</h2>
-          <ul class="posts blog black_wrapper">
-            <li>
-              <h6 class="cufon"><a href="#">Smidige metoder</a></h6>
-              Smidig utviklingsmetodikk står sentralt. Smidigkonferansene og xp meetup er gode arenaer for å lære mer. Vi holder også foredrag i lean og smidig.  <br/><br/>
-            </li>
-            <li>
-              <h6 class="cufon"><a href="#">Lean Software Development</a></h6>
-              Lean og smidig overlapper mye, men de har noe forskjellig fokus. Lean tar mer et ovenfra-ned perspektiv og drar med organisasjonen. Det handler rett og slett om å gjøre veien fra idé til produkt kortest mulig. Google på Mary Poppendieck.
-            </li>
-
-          </ul>
-        </li>
-    <li class="widget">
-          <h2 class="widgettitle">Teknologi</h2>
-          <ul class="posts blog black_wrapper">
-        <li>
-          <h6 class="cufon"><a href="#">Ruby</a></h6>
-           Vi bruker ruby til backend, med Rails eller Sinatra som rammeverk. Som database bruker vi gjerne NoSql, som f.eks. MongoDB, ofte i kombinasjon med postegresql eller MySql, eller en av dem alene. Vi velger det vi mener er best til jobben. Vi lager json-apier så det kan brukes av iphone, android apps eller andre systemer. Det samme brukes av frontend, med lettvekts javascript og html/css. Følg ruby i Norge på <a href="http://irb.no">irb.no</a>
-              </li>
-          </ul>
-        </li>
-
-        <li class="widget">
-          <h2 class="widgettitle">Oppdateringer</h2>
-          <ul class="posts blog black_wrapper">
-            <li><h6 class="cufon"><a href="#">Twitter</a></h6></li>
-          <li><a href="http://twitter.com/rubynor">@rubynor</a></li>
-            <li><a href="http://twitter.com/ole_morten">@ole_morten</a></li>
-            <li><h6 class="cufon"><a href="#">Blogg</a></h6></li>
-            <li><a href="http://olemortenamundsen.wordpress.com">oma blog</a> (CTO)</li>
-          </ul>
-        </li>
-     <li class="widget">
-          <h2 class="widgettitle">Meta</h2>
-          <ul>
-            <li><a href="#">Site Admin</a></li>
-            <li><a href="#">Logg inn</a></li>
-            <li><a href="/kontakt">Kontakt oss</a></li>
-          </ul>
-        </li>
-      </ul>
-
-      <br class="clear"/>
-    </div>
-
-    </div>
+  <%= erb :_footer%>
     <!-- End footer -->
 
-</div></div>
+</div>
 
 </body>
 </html>

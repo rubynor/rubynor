@@ -8,9 +8,11 @@
 
       <div class="menu-main-menu-container">
         <ul id="main_menu" class="nav">
-          <li><a href="/">Hjem</a>
+  <%= menu_selection == 'home' ?  '<li class="current-menu-item">': '<li>' %>
+          <a href="/">Hjem</a>
         </li>
-        <li class="current-menu-item"><a href="#">Portefølje</a>
+        <%= menu_selection == 'portfolio' ?  '<li class="current-menu-item">': '<li>' %>
+        <a href="#">Portefølje</a>
           <ul class="sub-menu">
             <li><a href="/portfolios_powest">Powest</a></li>
             <li><a href="/portfolios_imagenet">Imagenet</a></li>
@@ -18,7 +20,12 @@
             <li><a href="/portfolios_cv">CVmalen</a></li>
           </ul>
         </li>
-        <li><a href="/kontakt">Kontakt</a></li>
+<%= menu_selection == 'contact' ?  '<li class="current-menu-item">': '<li>' %>
+        <a href="/kontakt">Kontakt</a></li>
+
+    <%= menu_selection == 'emisjon' ?  '<li class="current-menu-item">': '<li>' %>
+            <a href="/emisjon">Nytt! Emisjon 18.mai</a></li>
+
       </ul>
     </div>
   </div>

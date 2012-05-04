@@ -5,7 +5,7 @@ module Rubynor
   class App < Sinatra::Base
 
     before do
-       cache_control :public, :must_revalidate, :max_age => 300
+       #cache_control :public, :must_revalidate, :max_age => 300
     end
 
     get '/' do

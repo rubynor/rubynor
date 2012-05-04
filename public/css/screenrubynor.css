@@ -41,3 +41,16 @@
   padding: 10px 0px 0px 25px;
   float: left;
 }
+
+#emisjon ul {
+  margin-left:50px;
+  padding-left: 0;
+  list-style-type:disc;
+}
+#emisjon{
+  color: black;
+}
+#emisjon h2 {
+  color: #222;
+padding:20px;
+}

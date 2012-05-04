@@ -61,7 +61,7 @@
 
     <!-- Begin header -->
     <div id="header_wrapper">
-      <%= erb :_top_bar %>
+      <%= erb :_top_bar, :locals => {menu_selection: 'portfolio'}%>
       <%= erb :_portfolio_title, :locals => {:title => "Kart og Aktiviteter"} %>
     </div>
     <!-- End header -->
