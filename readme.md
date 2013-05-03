@@ -13,7 +13,7 @@ It's built on the [Lotus Template from themeforest](http://themeforest.net/item/
 KISS. just edit the static html under public/
 
     # run the app locally
-    $ rackup  # defaults to read config.ru
+    $ shotgun  # defaults to read config.ru
 
 ## TODO
 
