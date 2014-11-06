@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>Rubynor - Skapere av fantastiske, skalerbare og fremtidsrettede webapplikasjoner</title>
+
+<!-- Template stylesheet -->
+<link rel='stylesheet' id='jqueryui_css-css'  href='css/jqueryui/custom.css' type='text/css' media='all' />
+<link rel='stylesheet' id='screen_css-css'  href='css/screen.css' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox_css-css'  href='js/fancybox/jquery.fancybox-1.3.0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='videojs_css-css'  href='js/video-js.css' type='text/css' media='all' />
+<link rel='stylesheet' id='vim_css-css'  href='js/skins/vim.css' type='text/css' media='all' />
+<link rel='stylesheet' id='colorpicker_css-css'  href='js/colorpicker/css/colorpicker.css' type='text/css' media='all' />
+<link rel='stylesheet' id='screenrubynor_css-css'  href='css/screenrubynor.css' type='text/css' media='all' />
+
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/jquery-ui.js'></script>
+<script type='text/javascript' src='js/fancybox/jquery.fancybox-1.3.0.js'></script>
+<script type='text/javascript' src='js/jquery.easing.js'></script>
+<script type='text/javascript' src='js/jquery.nivo.slider.js'></script>
+<script type='text/javascript' src='js/anythingSlider.js'></script>
+<script type='text/javascript' src='js/hint.js'></script>
+<script type='text/javascript' src='js/jquery.validate.js'></script>
+<script type='text/javascript' src='js/cufon.js'></script>
+<script type='text/javascript' src='js/browser.js'></script>
+<script type='text/javascript' src='js/video.js'></script>
+<script type='text/javascript' src='js/jquery.tipsy.js'></script>
+<script type='text/javascript' src='js/colorpicker/js/colorpicker.js'></script>
+<script type='text/javascript' src='js/colorpicker/js/eye.js'></script>
+<script type='text/javascript' src='js/colorpicker/js/utils.js'></script>
+<script type='text/javascript' src='js/custom.js'></script>
+
+<!--[if lt IE 8]>
+<link rel="stylesheet" href="css/ie7.css" type="text/css" media="all"/>
+<![endif]-->
+
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="css/ie.css" type="text/css" media="all"/>
+<![endif]-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27828405-1']);
+  _gaq.push(['_setDomainName', 'rubynor.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+
+
+<body class="page">
+
+  <!-- Begin template wrapper -->
+  <div id="wrapper">
+
+    <!-- Begin header -->
+    <div id="header_wrapper">
+      <%= erb :_top_bar, :locals => {menu_selection: 'portfolio'}%>
+      <%= erb :_portfolio_title, :locals => {:title => "Prosjekter"} %>
+    </div>
+    <!-- End header -->
+
+    <!-- Begin content -->
+    <div id="content_wrapper">
+
+      <div id="portfolios">
+        <div class="inner">
+
+          <!-- Begin main content -->
+          <div class="inner_wrapper">
+            <div class="standard_wrapper small">
+
+
+              <br class="clear"/><br/>
+
+              <blockquote><h2 class="quote">Prosjekter og firma</h2></blockquote>
+
+              <br class="clear"/>
+
+               Vi har gjennomført mange konsulentprosjekter, bygget egne produkter og startet selskap siden Rubynor AS ble opprettet. Vi er ekstremt stolte av det vi har fått til nå! Det er 14 aksjonærer i Rubynor AS, de fleste små, men filosofien er at festen blir så mye bedre når det er mange som vinner :)
+               <p>Vi startet, med partnere, kraftanmelding.no (Kraftanmelding AS) i oktober 2014 (for en måned siden i skrivende stund). Det er et prosjekt innen kraftbransjen. Fra før har jeg Powest AS i den bransjen, powest.no. Vi er ekstremt gode på teknologi og kraftanmelding.no er en teknologiløsning i kraftbransjen som optimerer og automatiserer. Jeg henviser dit for mer oppdateringer</p>
+               <p>Rubynor har i 2014 samarbeidet med Taxidepot AS om et nytt system for taxiene på Gardermoen. Er du der vil du se 3 store kabinetter med 32" touchskjermer. Det er et intrikat system med sperrede områder og brikkelesere på taxiene. Passasjeren velger hvor han skal, hvor mange de er og så får de en liste over fastpristilbud og takstametertilbud, sortert på pris. Vi er stolte av å bidra til norges første reelle priskonkurranse for taxier!
+               </p>
+               <p>I annet prosjekt har vi laget en 2nd screen løsning, nær sagt 3rd screen, der skatteetatens instruktør bruker en android app til å styre en prosjektor tilknyttet en pc. Publikum får spørsmål opp på sin mobil, uten noen form for installasjon. Svarene samles og vises øyeblikkelig, noe som skaper reelle interaktive foredrag. Et sinnykt kult konsulentprosjekt!
+               </p>
+               <p>
+                 Om Daglig leder Ole Morten Amundsen i Rubynor AS og hans andre roller. Ole Morten er for tiden CTO og deleier i Bent Pixels LLC, som omsetter for rundt $8 mill i året. Det er mao mange baller i luften og mye action. Så jeg er litt opptatt selv, men jeg er alltid på jakt etter nye muligheter for teamet mitt. Vi jobber på kryss og tvers av bransjer :)
+               </p><p>Alt vi tar i blir ikke til gull. ImageNet var et genialt prosjekt, men forut sin tid og vi gikk nesten konk (startet 2011, lagt ned 2012). Det lot deg laste opp røntgen, MR, CT mm. slik at du kunne se dem på nett, dele med andre leger for second opinion og la dem laste ned for inspeksjon i deres eget favorittsystem. Løsningen gir for mye mening til at man skal slutte å brenne CD-er og sende med taxier. Helse er en bransje som skremmer meg, den er ekstremt lite innovativ og avers for nye ting ikke alle andre bruker. Det er en lærdom.</p>
+            </div>
+          </div> <!-- END MAIN CONTENT -->
+        </div> <!-- end inner -->
+     </div> <!-- end portfolio -->
+
+     <%= erb :_footer %>
+  </div> <!-- end template wrapper -->
+
+</body>
+</html>
